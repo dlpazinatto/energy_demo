@@ -28,7 +28,7 @@ class ConnectorPlay:
         self.downloaded_file_path = os.path.join(self.download_dir, download.suggested_filename)
         download.save_as(self.downloaded_file_path)
 
-    def get_page(self, url, key):
+    def get_page(self, url):
         print("Getting page: ", url)
         self.page.goto(url)
 
